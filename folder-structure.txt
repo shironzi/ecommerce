@@ -1,0 +1,42 @@
+ecommerce-platform/
+├── services/
+│   ├── user-service/
+│   │   ├── src/
+│   │   │   ├── controllers/
+│   │   │   ├── models/
+│   │   │   ├── routes/
+│   │   │   ├── services/
+│   │   │   └── app.ts
+│   │   ├── tests/
+│   │   ├── Dockerfile
+│   │   ├── package.json
+│   │   └── README.md
+│   ├── product-service/
+│   │   └── ... similar structure ...
+│   ├── order-service/
+│   │   └── ... similar structure ...
+│   ├── inventory-service/
+│   │   └── ... similar structure ...
+│   ├── review-service/
+│   │   └── ... similar structure ...
+│   ├── notification-service/
+│   │   └── ... similar structure ...
+│   ├── analytics-service/
+│   │   └── ... similar structure ...
+│   └── admin-service/
+│       └── ... similar structure ...
+├── api-gateway/
+│   ├── src/
+│   ├── Dockerfile
+│   ├── package.json
+│   └── README.md
+├── infrastructure/
+│   ├── docker-compose.yml
+│   ├── kubernetes/
+│   ├── terraform/
+│   └── README.md
+├── docs/
+│   ├── architecture.md
+│   ├── api-documentation.md
+│   └── README.md
+└── README.md

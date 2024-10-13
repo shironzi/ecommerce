@@ -40,3 +40,7 @@ ecommerce-platform/
 │   ├── api-documentation.md
 │   └── README.md
 └── README.md
+
+db password
+josh = JZO1UH9XNQ40VXnT
+dbUser = BOHO1pWBVrggrh6F

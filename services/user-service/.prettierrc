@@ -1,0 +1,7 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "endOfLine": "auto",
+  "editor.codeActionsOnSave": { "source.fixAll": true },
+  "editor.formatOnSave": false
+}

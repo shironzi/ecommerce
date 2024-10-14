@@ -29,10 +29,10 @@ export class AuthService {
   }
 
   async register(userDto: any) {
-    const hashedPassowrd = await bcrypt.hash(userDto.password, 10);
+    const hashedPassword = await bcrypt.hash(userDto.password, 10);
     const user = await this.userService.create({
       ...userDto,
-      password: hashedPassowrd,
+      password: hashedPassword,
     });
     const payload: JwtPayload = { email: user.email };
 

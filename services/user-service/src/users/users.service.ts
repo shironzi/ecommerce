@@ -15,6 +15,15 @@ export class UsersService {
     return await createdUser.save();
   }
 
+  async update(id: string, updateUserDto: any) {
+    const user = await this.userModel.findById(id);
+    if (!user) {
+      throw new Error('User not found');
+    }
+    Object.assign(user, updateUserDto);
+    return await user.save();
+  }
+
   async findAll(): Promise<User[]> {
     return this.userModel.find().exec();
   }
@@ -24,7 +33,6 @@ export class UsersService {
     if (!user) {
       throw new NotFoundException(`User with ID ${id} not found`);
     }
-
     return user;
   }
 
@@ -34,5 +42,13 @@ export class UsersService {
     }
 
     return await this.userModel.findOne({ email }).exec();
+  }
+
+  async deleteUser(id: string) {
+    const user = await this.userModel.findById(id).exec();
+    if (!user) {
+      throw new NotFoundException(`User with ID ${id} not found`);
+    }
+    return await user.deleteOne();
   }
 }

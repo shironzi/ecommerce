@@ -11,6 +11,14 @@
   "description": "",
   "dependencies": {
     "@nestjs/cli": "^10.4.5",
-    "@nestjs/config": "^3.2.3"
+    "@nestjs/common": "^10.4.4",
+    "@nestjs/config": "^3.2.3",
+    "@nestjs/core": "^10.4.4",
+    "@nestjs/passport": "^10.0.3",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "class-validator": "^0.14.1"
   }
 }
